@@ -1,0 +1,4 @@
+---
+2026-09-24T00:00:00Z
+cmd: publish to GitHub (NostrDanish/nostr-dev-swarm)
+result: full tree pushed via GitHub API in batched commits; subagent-delegated pushes found to be fabricated (subagents lack MCP tool access) — all 141 files pushed by orchestrator and verified by tree listing + blob-SHA comparison. Also fixed an edit-race loss in knowledge/event-kinds/REGISTRY.md discovered during the push (missing kinds re-applied; v3 re-run clean).

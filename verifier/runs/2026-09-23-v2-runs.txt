@@ -1,0 +1,9 @@
+---
+2026-09-23T08:45:10Z
+cmd: bash verifier/v2/check.sh
+result: FAIL — 2 v2 regressions: residual '65536' post-mortem string in agents/cryptography.md; 'never silently' still in README.md (parallel-edit race)
+---
+2026-09-23T08:47:03Z
+cmd: bash verifier/v2/check.sh
+exit: 0
+result: PASS — 60 checks, 0 failures (v1 structure/content + v2 integrity checks)
