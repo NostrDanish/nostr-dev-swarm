@@ -57,3 +57,14 @@ EXECUTIVE SUMMARY · SYSTEM MAP · FINDINGS (Critical→High→Medium→Low) · 
 ## 8. AI security boundary
 AI NEVER holds authority for: private keys, signing, financial transactions, security-critical authorization, production credentials, destructive infra ops (ADR-0002 — no "silently" qualifier, no exceptions). No secrets in agent contexts, ever.
 Pipeline: `AI → Unsigned Intent → Policy Engine → Human/Trusted Approval → Signer → Network`. Policy Engine minimum: capability-scoped permissions, append-only action log, enumerated forbidden operations, anti-fatigue approval UX.
+
+## 9. Shared portfolio continuity — Notion Second Brain
+
+When the user's Notion connection is available, use the Second Brain Workbench before starting or continuing an existing project:
+- Workbench: https://app.notion.com/p/41703fc4826e81f6843eeed3daa1a4a6
+- GitHub Repository & Build Atlas: https://app.notion.com/p/d1a4cfb079394b9abd40a39afe788cbf
+- Agent Operating Guide: https://app.notion.com/p/40a03fc4826e81c1aaf0d96d720c250a
+
+Before implementation, search project/task records and Atlas by repository, feature and aliases; read the latest handover; verify current branch/HEAD, README, CI and code; and find active parallel work. Record a bounded task with acceptance criteria, exclusions and owner/agent. The Atlas is an index, not proof that a build/deployment works; repository source and test output remain authoritative.
+
+At the end of substantial work, update the relevant project/task, architecture/knowledge document and dated Work Log entry with exact repo/branch/commit, files, commands/tests and results, untested behavior, risks and next exact action. When a task spans multiple repos, update the conformance/dependency map rather than documenting only the first repo changed. Never put secrets or raw private corpus/event data in Notion. If Notion is unavailable, continue safely using repository docs and include a handover that says no workspace update was made.
